@@ -1,0 +1,6 @@
+{
+  "selector" : "*.cpp",
+  "cmd" : ["bash", "-c", "gcc \"$file_name\" -o \"${file_base_name}\""],
+  "shell": false,
+  "working_dir": "${project_path:${folder}}",
+}

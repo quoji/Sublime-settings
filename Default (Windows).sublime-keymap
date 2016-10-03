@@ -1,0 +1,17 @@
+[
+	{ "keys": ["ctrl+t"], "command": "expand_region" },
+	{ "keys": ["ctrl+shift+j"], "command": "reindent", "args": {"single_line": false}},
+	{ "keys": ["alt+n"], "command": "nextbuilderror"},
+	{ "keys": ["ctrl+alt+i"], "command": "toggle_overwrite" },
+	{ "keys": ["ctrl+alt+d"], "command": "javac_compile_and_run_file" },
+	{
+    "keys": ["ctrl+alt+r"],
+    "command": "run_macro_file",
+    "args": {
+      "file": "res://Packages/LocalVariable/macro/rename_variable.sublime-macro"
+    },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+    ]
+  	}
+]

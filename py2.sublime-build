@@ -1,0 +1,6 @@
+{
+	"cmd" : ["python", "$file_name"],
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	"selector": "source.python",
+	"encoding": "utf8",
+}

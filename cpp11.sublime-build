@@ -1,0 +1,25 @@
+{
+"cmd": [ "g++", "-std=c++11", "-time", "$file", "-o", "$file_base_name"],
+"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+"working_dir": "${file_path}",
+"selector": "source.c",
+"shell": true,
+
+
+"variants":
+    [
+      {
+        "name": "all",
+        "cmd": [ "g++", "-std=c++11", "-Wall", "-time", "*.cpp", "-o", "$file_base_name", "&&", "$file_base_name"]
+      },
+      {
+        "name": "makerun",
+        "cmd": ["puttycompile"]
+      },
+      {
+			"name": "Run",
+			"shell_cmd": "g++ \"${file}\" -o  \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\""
+	  }
+    ]
+}
+
